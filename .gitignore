@@ -1,3 +1,13 @@
+# .h5 models
+*.h5
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.mov
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
