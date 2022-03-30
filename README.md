@@ -31,7 +31,7 @@ Inside the ```mask-detection``` directory you will find the following sources:
 
 ### __Resources__
 
-You will need to download and unzip the [```facemask-detection-resources.zip```](https://drive.google.com/file/d/1-Aa3MxphxxxyAvK0pRfmk8ETEJQbA9nD/view?usp=sharing) archive containing:
+You will need to download and unzip the [```facemask-detection-resources.zip```](https://drive.google.com/file/d/1-Aa3MxphxxxyAvK0pRfmk8ETEJQbA9nD/view?usp=sharing) archive in the ```mask-detection``` folder. It contains:
 
 * The ```retinaface``` model for face detection;
 * The ```mobilenet``` model for mask classification;
