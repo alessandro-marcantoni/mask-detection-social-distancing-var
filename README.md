@@ -1,4 +1,5 @@
 # __Mask Detection & Social Distancing__
+
 > _Visione Artificiale e Riconoscimento_
 
 This repository contains the project developed for the above course.
@@ -8,12 +9,14 @@ The two main parts are:
 * __Social Distancing__: this solution detects people in pictures, ideally taken in a small room, and checks whether they are abiding by the social distancing rules or not.
 
 ## __Requirements__
+
 In order to use the solutions above, you will need to have ```python >= 3.7.12``` and ```pip >= 22.0.3``` installed on your machine. The required libraries can be easily downloaded and installed by running the following command: 
 ```
 pip install -r requirements.txt
 ```
 
 ## __Mask Detection__
+
 Inside the ```mask-detection``` directory you will find the following sources:
 
 * ```training.ipynb```: this is the notebook used to perform the training of the classifiers for the _mask classification_ task.
@@ -27,7 +30,8 @@ Inside the ```mask-detection``` directory you will find the following sources:
     ```
 
 ### __Resources__
-You will need to download and unzip the ```facemask-detection-resources.zip``` archive containing:
+
+You will need to download and unzip the [```facemask-detection-resources.zip```](https://drive.google.com/file/d/1-Aa3MxphxxxyAvK0pRfmk8ETEJQbA9nD/view?usp=sharing) archive containing:
 
 * The ```retinaface``` model for face detection;
 * The ```mobilenet``` model for mask classification;
