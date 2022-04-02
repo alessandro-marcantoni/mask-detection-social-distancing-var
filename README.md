@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## __Mask Detection__
 
-Inside the ```mask-detection``` directory you will find the following sources:
+Inside the ```mask-detection``` directory you will find the following sources:  
 
 * ```training.ipynb```: this is the notebook used to perform the training of the classifiers for the _mask classification_ task.
 * ```performance_eval.ipynb```: this is the notebook used to test the performances of the entire solution.
