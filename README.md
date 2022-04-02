@@ -3,7 +3,7 @@
 > _Visione Artificiale e Riconoscimento_
 
 This repository contains the project developed for the above course.
-The two main parts are:
+The two main parts are:  
 
 * __Mask Detection__: this solution detects people's faces in pictures, ideally taken in a small room, and determines whether they are wearing a face mask correctly, not correctly or not at all.
 * __Social Distancing__: this solution detects people in pictures, ideally taken in a small room, and checks whether they are abiding by the social distancing rules or not.
