@@ -3,7 +3,7 @@
 > _Visione Artificiale e Riconoscimento_
 
 This repository contains the project developed for the above course.
-The two main parts are:
+The two main parts are:  
 
 * __Mask Detection__: this solution detects people's faces in pictures, ideally taken in a small room, and determines whether they are wearing a face mask correctly, not correctly or not at all.
 * __Social Distancing__: this solution detects people in pictures, ideally taken in a small room, and checks whether they are abiding by the social distancing rules or not.
@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## __Mask Detection__
 
-Inside the ```mask-detection``` directory you will find the following sources:
+Inside the ```mask-detection``` directory you will find the following sources:  
 
 * ```training.ipynb```: this is the notebook used to perform the training of the classifiers for the _mask classification_ task.
 * ```performance_eval.ipynb```: this is the notebook used to test the performances of the entire solution.
