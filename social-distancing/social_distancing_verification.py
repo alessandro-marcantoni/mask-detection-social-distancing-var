@@ -3,6 +3,7 @@ import cv2
 import math
 import tensorflow as tf
 import itertools as iter
+import sys
 
 
 def resize_box(box, h, w):
@@ -113,15 +114,16 @@ def save_video(frames, video_path="video.avi", TARGET_W = 800, TARGET_H = 450):
         out.write(frames[i])
     out.release()
 
-model_name = "centernet_resnet50_v1_fpn_512x512_coco17_tpu-8"
-path_video = "room5-triple.mp4"
+model_name = "models/centernet_resnet50_v1_fpn_512x512_coco17_tpu-8"
+path_video = sys.argv[1]
 matrix_path = "perspective_matrix.npy"
 
 print("Extracting video frames...")
 frames = get_video_frames(path_video)
+print("Extracted franes: "+str(len(frames)))
 h, w = frames[0].shape[:2]
 print("Loading model...")
-model = tf.saved_model.load("centernet_resnet50_v1_fpn_512x512_coco17_tpu-8/saved_model")
+model = tf.saved_model.load(model_name+"/saved_model")
 matrix = np.load(matrix_path)
 print("Starting Human Detection...")
 boxes, s, c = predict(model, frames)
@@ -131,4 +133,4 @@ masks = [check_centroids_distancing(centroids, 9, w)[1] for centroids in bird_ey
 checked_boxes = [check_boxes_distancing(frame_boxes, mask) for frame_boxes, mask in zip(boxes, masks)]
 checked_frames = [draw_checked_boxes_on_frame(f, b) for f, b in zip(frames, checked_boxes)]
 print("Saving output video...")
-save_video(checked_frames,"checked_video3.avi", TARGET_W=w, TARGET_H=h)
+save_video(checked_frames,"checked_video.avi", TARGET_W=w, TARGET_H=h)
