@@ -49,7 +49,7 @@ Inside the ```social-distancing``` directory you will find the following sources
     
     * The path of the video to be inferred.
     ```
-    python social_distancing_check.py <path/to/video>
+    python social_distancing_verification.py <path/to/video>
     ```
 
 ### __Resources__
