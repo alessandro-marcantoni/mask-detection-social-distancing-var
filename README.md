@@ -54,8 +54,9 @@ Inside the ```social-distancing``` directory you will find the following sources
 
 ### __Resources__
 
-You will need to download and unzip the [```social-distancing-resources.zip```](https://drive.google.com/file/d/1cvSxiu1t7jY7KLyjDlj0Z5HQAqanle6f/view?usp=sharing) archive in the ```social-distancing``` folder. It contains:
+You will need to download and unzip the [```social-distancing-resources.zip```](https://drive.google.com/file/d/1OYP-PBlQ7-Zo9cdPgzrlnAgo8xqPzNCz/view?usp=sharing) archive in the ```social-distancing``` folder. It contains:
 
+* The ```centernet-resnet50v1-fpn``` used for inference;
 * Video example of people in a room to try the inference script;
 * Images and labels used for test;
 * Transformation matrix for both the video example and test set. 
